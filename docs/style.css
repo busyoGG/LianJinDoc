@@ -1,0 +1,27 @@
+p {
+    font-size: 20px !important;
+    /* font-weight: bold; */
+    /* color:aliceblue */
+}
+
+li {
+    font-size: 20px !important;
+    /* font-weight: bold; */
+    /* color:aliceblue */
+}
+
+.ul_close{
+    display: none;
+}
+
+.h2_line {
+    display: flex;
+    vertical-align: center;
+    border-bottom: 1px solid rgba(68,68,68,0.1);
+    padding-bottom: 20px;
+}
+
+/* .h2_line:before {
+    content: '';
+    margin-top: -32px;
+} */
