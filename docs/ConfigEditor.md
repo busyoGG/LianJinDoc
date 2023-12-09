@@ -64,7 +64,7 @@ Dictionary<int, DialogConfigData> configs = ConfigManager.Ins().GetConfig<Dialog
 
 修改文件 `ConfigEditor` 中的 `_outputUrl` 属性即可修改写入配置类的路径。
 
-![](https://img.busyo.buzz/imgUpload/20231210-033542-609.png)
+![](https://img.busyo.buzz/imgUpload/20231210-061234-22.png)
 
 ## 注意
 
