@@ -70,5 +70,3 @@ Dictionary<int, DialogConfigData> configs = ConfigManager.Ins().GetConfig<Dialog
 
 * 配置文件夹下不能创建和配置文件夹同名的文件夹。
 * 配置文件夹只能存在最多二级文件夹，即最大路径为 `/Configs/Folder/Config.json`。
-
-### 测试
