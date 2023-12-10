@@ -58,6 +58,14 @@ Dictionary<int, DialogConfigData> configs = ConfigManager.Ins().GetConfig<Dialog
 
     ![](https://img.busyo.buzz/imgUpload/20231210-033156-694.png)
 
+* 如果要生成一个对象数组，只需要在数组中写入对象键值对，即可生成对象辅助类。本类型不支持自定义数组和字典类型，只能按照输入的内容创建基本数据类型的数组和字典。
+
+    例：
+    
+    ![](https://img.busyo.buzz/imgUpload/20231210-195150-134.png)
+    
+    ![](https://img.busyo.buzz/imgUpload/20231210-195531-712.png)
+
 ## 配置路径修改
 
 修改文件 `ConfigEditor` 中的 `_jsonUrl` 属性即可修改读取json文件的文件夹路径。
