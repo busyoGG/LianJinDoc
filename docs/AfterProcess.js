@@ -1,8 +1,14 @@
 window.AfterProcess = {
   ResetCodeStyle: () => {
-    var eles = document.getElementsByClassName("highlight");
+    // var eles = document.getElementsByClassName("highlight");
+    var eles = document.getElementsByTagName("pre");
     var colors = ["#ed6a5e", "#f5bd4f", "#61c454"];
     for (let i = 0, len = eles.length; i < len; i++) {
+      // eles[i].attributes.removeNamedItem("v-pre");
+      // // eles[i].attributes.setNamedItem("v-highlightj");
+      // // eles[i].setAttribute("v-highlightjs",true);
+      // eles[i].v-highlightjs;
+
       let child = eles[i].firstChild;
       //创建按钮
       let customDiv = document.createElement("div");
@@ -152,7 +158,7 @@ window.AfterProcess = {
 
   Init: () => {
     console.log("初始化界面");
-    // AfterProcess.ResetCodeStyle();
+    AfterProcess.ResetCodeStyle();
     AfterProcess.ResetTitle();
     setTimeout(() => {
       AfterProcess.ResetList();

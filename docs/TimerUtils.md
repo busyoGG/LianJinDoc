@@ -13,7 +13,7 @@
 * 延迟执行：`TimerChain Once(int delay, Action action)`
 下面的例子是延迟一秒后打印消息到控制台。
 
-  ```C#
+  ```csharp
   TimerUtils.Once(1000, () =>
   {
       ConsoleUtils.Log("执行", DateTime.Now, chain.GetId());
@@ -23,7 +23,7 @@
 * 循环执行：`TimerChain Loop(int interval, Action action, int delay = 0, int loopTimes = -1)`
 下面的例子是循环三次，每次1秒间隔，延迟时间为0，不传入循环次数就是无限循环。
 
-  ```C#
+  ```csharp
   TimerUtils.Loop(1000, () =>
   {
     ConsoleUtils.Log("循环", DateTime.Now);
@@ -32,7 +32,7 @@
 
 * 清除定时器
 
-  ```C#
+  ```csharp
   TimerChain chain = TimerUtils.Loop(1000, () =>
   {
     ConsoleUtils.Log("循环", DateTime.Now);
@@ -45,7 +45,7 @@
 
 * 链式调用
 
-  ```C#
+  ```csharp
   TimerUtils.Loop(1000, () =>
   {
     ConsoleUtils.Log("循环", DateTime.Now);
