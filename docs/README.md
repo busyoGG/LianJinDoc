@@ -8,11 +8,11 @@
 
 * 使用Github作为[图床](https://pic.busyo.buzz)。秘钥为 `busyo`。
 
-* '_sidebar.md' 文件为侧边栏导航配置文件。
+* `_sidebar.md` 文件为侧边栏导航配置文件。
 
 * 如果需要增加侧边栏项目，请在docs文件夹下新建md文档，并且配置到侧边栏导航文件中。
 
-* 'AfterProgress.js' 为页面处理代码，一些页面的布局处理效果在这里实现。
+* `AfterProgress.js` 为页面处理代码，一些页面的布局处理效果在这里实现。
 
 * `index.html` 中的 `plugins` 的 `function(hook)` 提供自定义插件的修改能力，详情见[开发插件](https://docsify.js.org/#/zh-cn/write-a-plugin)
 

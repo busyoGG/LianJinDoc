@@ -52,7 +52,7 @@ Dictionary<int, DialogConfigData> configs = ConfigManager.Ins().GetConfig<Dialog
 
     ![](https://img.busyo.buzz/imgUpload/20231210-032954-794.png)
 
-* 如果要生成一个字典，则我们可以再加一个 `|` 来表示键值对类型，即写成 `PropName|type|type`，并且在配置项写一个空对象 `{}`，这样就能生成 `Dictionary<type,type>`。
+* 如果要生成一个字典，则我们可以再加一个 `|` 来表示键值对类型，即写成 `PropName|type|type`，并且在配置项写一个空对象 `{}`，这样就能生成 `Dictionary<type,type>`。目前支持的key类型为string和int。
 
     例：
 
@@ -65,6 +65,12 @@ Dictionary<int, DialogConfigData> configs = ConfigManager.Ins().GetConfig<Dialog
     ![](https://img.busyo.buzz/imgUpload/20231210-195150-134.png)
     
     ![](https://img.busyo.buzz/imgUpload/20231210-195531-712.png)
+
+### 配置管理器说明
+
+使用 `ConfigManager.Ins().GetConfig<T>(string folder, string name)` 来获取对应的配置。
+
+使用 `ConfigManager.Ins().Clear()` 来清除缓存。
 
 ## 配置路径修改
 
